@@ -303,7 +303,6 @@ export const navListMenuCamera = [
     icon: TbPentagonX,
   },
 ];
-
 export const navListMenuOthers = [
   {
     title: "Watch",

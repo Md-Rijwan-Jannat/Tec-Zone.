@@ -36,7 +36,7 @@ export function SearchModal({ text }: SearchModalProps) {
               containerProps={{
                 className: "w-full",
               }}
-              className="bg-gray-800 bg-opacity-60 pl-9 placeholder:text-[#F5A] text-white border-none focus:outline-none"
+              className="bg-gray-200 pl-9 placeholder:text-[#F5A] text-white border-none focus:outline-none"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}

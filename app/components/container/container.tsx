@@ -2,6 +2,7 @@
 import React, { ReactNode } from "react";
 import Navbar from "../navBar/NavBar";
 import { NavbarWithMegaMenu } from "../navLink/NavLink";
+import Footer from "../footer/Footer";
 
 interface ContainerProps {
   children: ReactNode;
@@ -23,9 +24,7 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
       {/* Footer */}
       <footer className="bg-gray-300 py-4 px-2">
         <div className="container mx-auto">
-          {/* Your footer content goes here */}
-          <p>&copy; 2024 E-Commerce Site. All rights reserved.</p>
-          {/* Add links or other footer components */}
+          <Footer />
         </div>
       </footer>
     </div>

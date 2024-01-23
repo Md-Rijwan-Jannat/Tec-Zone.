@@ -7,6 +7,7 @@ import { FaRegUser, FaShopify } from "react-icons/fa";
 import { MdSearch, MdOutlineLocalOffer } from "react-icons/md";
 import { SearchModal } from "../modals/SearchModal";
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
+import { UserModal } from "../modals/UserModal";
 
 const Navbar: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ const Navbar: React.FC = () => {
               containerProps={{
                 className: "min-w-[400px]",
               }}
-              className="bg-gray-800 bg-opacity-60 pl-9 placeholder:text-[#F5A] text-white border-none focus:outline-none"
+              className="bg-gray-50 bg-opacity-10 pl-9 placeholder:text-[#F5A] text-white border-none focus:outline-none"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
@@ -63,14 +64,7 @@ const Navbar: React.FC = () => {
               Offers
             </p>
           </div>
-          <div className="flex flex-col items-center gap-1 hover:text-[#F5A]">
-            <IconButton placeholder={""}>
-              <FaRegUser className="text-25px md:text-[30px] text-[#F5A]"></FaRegUser>
-            </IconButton>
-            <p className="text-[5px] md:text-[8px] lg:text-[10px] hidden md:block">
-              Register / Login
-            </p>
-          </div>
+          <UserModal />
           <div className="xl:hidden gap-2 flex mr-2">
             <Badge content="5">
               <IconButton placeholder={""}>

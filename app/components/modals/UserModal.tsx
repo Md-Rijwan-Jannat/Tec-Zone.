@@ -8,6 +8,7 @@ import {
   Typography,
   IconButton,
 } from "@material-tailwind/react";
+import Link from "next/link";
 import { CiSettings } from "react-icons/ci";
 import {
   FaEdit,
@@ -62,6 +63,19 @@ export function UserModal() {
           <Typography placeholder={""} variant="small" className="font-medium">
             Sign Out
           </Typography>
+        </MenuItem>
+        <MenuItem placeholder={""}>
+          <Link className="flex items-center gap-2 " href={"/sign-up"}>
+            {" "}
+            <FaSignOutAlt />
+            <Typography
+              placeholder={""}
+              variant="small"
+              className="font-medium"
+            >
+              Sign Up
+            </Typography>
+          </Link>
         </MenuItem>
       </MenuList>
     </Menu>

@@ -3,7 +3,6 @@ import {
   Bars4Icon,
   GlobeAmericasIcon,
   NewspaperIcon,
-  PhoneIcon,
   RectangleGroupIcon,
   SquaresPlusIcon,
   SunIcon,
@@ -45,6 +44,7 @@ import { GiCannon, GiCarrier } from "react-icons/gi";
 import { HiOutlineMagnifyingGlassPlus } from "react-icons/hi2";
 import { TbPentagonX } from "react-icons/tb";
 import { GrCloudSoftware } from "react-icons/gr";
+import { RiTeamLine } from "react-icons/ri";
 
 export const navListMenuDesktop = [
   {
@@ -211,7 +211,7 @@ export const navListMenuTablet = [
   {
     title: "Realme",
     description: "Find the perfect solution for your needs.",
-    icon: "realme",
+    icon: RiTeamLine,
   },
 ];
 export const navListMenuPhone = [
@@ -258,7 +258,7 @@ export const navListMenuPhone = [
   {
     title: "Realme",
     description: "Explore limited-time deals and bundles",
-    icon: "realme",
+    icon: RiTeamLine,
   },
 ];
 export const navListMenuCamera = [

@@ -19,7 +19,7 @@ const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
-      <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
+      <div className="flex flex-col md:flex-row gap-5 items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="flex items-center gap-2 justify-start">
           <input
             type="email"
@@ -44,7 +44,7 @@ const Footer: FC = () => {
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="">
             <Link className="ml-2 text-xl text-[#F5A]" href="/">
-              <span className="logo text-[#F5A] font-bold text-sm md:text-lg lg:text-2xl">
+              <span className="logo text-[#F5A] font-bold text-lg lg:text-2xl">
                 Tec Zone
               </span>
             </Link>

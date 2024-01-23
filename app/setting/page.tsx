@@ -1,7 +1,9 @@
-import React from 'react'
+// app/setting/page.tsx
 
-export const Setting = () => {
-  return (
-    <div>Setting</div>
-  )
-}
+import React from "react";
+
+const Setting: React.FC = () => {
+  return <div>Setting</div>;
+};
+
+export default Setting;

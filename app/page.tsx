@@ -8,6 +8,7 @@ export default function Home() {
     <main>
       <div>
         <Banner />
+        <h1 className="text-4xl text-center text-[#F5A]">Coming soon more!</h1>
       </div>
       <WebsiteModal />
     </main>

@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
               containerProps={{
                 className: "min-w-[400px]",
               }}
-              className="bg-gray-50 bg-opacity-10 pl-9 placeholder:text-[#F5A] text-white border-none focus:outline-none"
+              className=" pl-9 placeholder:text-[#F5A] text-white border-none focus:outline-none"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
@@ -35,6 +35,7 @@ const Navbar: React.FC = () => {
             <div className="!absolute left-3 top-[13px]">
               <MdSearch className="text-[#F5A] text-[13px] md:text-[17px] hidden md:block"></MdSearch>
             </div>
+            <div className="border-b border-gray-600"></div>
           </div>
         </div>
         <div className="flex items-center gap-4 lg:gap-7 mr-2">

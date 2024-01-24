@@ -24,11 +24,11 @@ const Footer: FC = () => {
           <input
             type="email"
             name="email"
-            className="outline-none bg-gray-400 rounded-md py-2 px-2 placeholder:text-black"
+            className="outline-none bg-gray-400 rounded-md py-2 px-2 placeholder:text-gray-600"
             placeholder="Enter your email"
             id=""
           />
-          <Button className="text-white" placeholder={""} variant="gradient">
+          <Button className="text-white bg-[#F5A]" placeholder={""}>
             Subscribe
           </Button>
         </div>

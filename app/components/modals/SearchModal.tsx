@@ -36,12 +36,13 @@ export function SearchModal({ text }: SearchModalProps) {
               containerProps={{
                 className: "w-full",
               }}
-              className="bg-gray-200 pl-9 placeholder:text-[#F5A] text-white border-none focus:outline-none"
+              className="bg-gray-300 pl-9 text-gray-700 placeholder:text-[#F5A] border-none focus:outline-none"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
               crossOrigin="anonymous"
             />
+            <hr />
             <div className="!absolute left-3 top-[13px]">
               <MdSearch className="text-[#F5A] text-[13px] md:text-[17px]"></MdSearch>
             </div>

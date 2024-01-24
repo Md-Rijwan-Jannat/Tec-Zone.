@@ -33,7 +33,7 @@ export default function SignUp() {
               crossOrigin={""}
               size="lg"
               placeholder="name@mail.com"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+              className=" !border-t-blue-gray-200 focus:!border-t-purple-400 outline-none"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
@@ -50,7 +50,7 @@ export default function SignUp() {
               crossOrigin={""}
               size="lg"
               placeholder="name@mail.com"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+              className=" !border-t-blue-gray-200 focus:!border-t-purple-400 outline-none"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
@@ -68,7 +68,7 @@ export default function SignUp() {
               type="password"
               size="lg"
               placeholder="********"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+              className=" !border-t-blue-gray-200 focus:!border-t-purple-400 outline-none"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}

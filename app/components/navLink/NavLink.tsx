@@ -31,9 +31,9 @@ import {
   navListMenuCamera,
   navListMenuMonitor,
 } from "../navData/NavData";
-
+import Link from "next/link";
 interface NavListItemProps {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>> | React.ElementType;
   title: string;
   description: string;
 }
@@ -44,17 +44,13 @@ function NavListMenuItems({
   description,
 }: NavListItemProps) {
   return (
-    <a href="#" key={title}>
+    <Link href="#" key={title}>
       <MenuItem
         placeholder="menu"
         className="flex items-center gap-3 rounded-lg"
       >
         <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-          {" "}
-          {React.createElement(Icon, {
-            strokeWidth: 2,
-            className: "h-6 text-gray-900 w-6",
-          })}
+          <Icon strokeWidth={2} className="h-6 text-gray-900 w-6" />
         </div>
         <div>
           <Typography
@@ -74,10 +70,9 @@ function NavListMenuItems({
           </Typography>
         </div>
       </MenuItem>
-    </a>
+    </Link>
   );
 }
-
 function NavListMenu() {
   const [isMenuDesktop, setIsMenuDesktop] = useState(false);
   const [isMenuLaptop, setIsMenuLaptop] = useState(false);
@@ -99,7 +94,6 @@ function NavListMenu() {
   const renderItemsDesktop = navListMenuDesktop.map(
     ({ icon, title, description }, key) => (
       <NavListMenuItems
-        placeholder="Text"
         key={key}
         icon={icon}
         title={title}
@@ -110,7 +104,6 @@ function NavListMenu() {
   const renderItemsLaptop = navListMenuLaptop.map(
     ({ icon, title, description }, key) => (
       <NavListMenuItems
-        placeholder="Text"
         key={key}
         icon={icon}
         title={title}
@@ -121,7 +114,6 @@ function NavListMenu() {
   const renderItemsMonitor = navListMenuMonitor.map(
     ({ icon, title, description }, key) => (
       <NavListMenuItems
-        placeholder="Text"
         key={key}
         icon={icon}
         title={title}
@@ -132,7 +124,6 @@ function NavListMenu() {
   const renderItemsTablet = navListMenuTablet.map(
     ({ icon, title, description }, key) => (
       <NavListMenuItems
-        placeholder="Text"
         key={key}
         icon={icon}
         title={title}
@@ -143,7 +134,6 @@ function NavListMenu() {
   const renderItemsPhone = navListMenuPhone.map(
     ({ icon, title, description }, key) => (
       <NavListMenuItems
-        placeholder="Text"
         key={key}
         icon={icon}
         title={title}
@@ -154,7 +144,6 @@ function NavListMenu() {
   const renderItemsCamera = navListMenuCamera.map(
     ({ icon, title, description }, key) => (
       <NavListMenuItems
-        placeholder="Text"
         key={key}
         icon={icon}
         title={title}
@@ -165,7 +154,6 @@ function NavListMenu() {
   const renderItemsOthers = navListMenuOthers.map(
     ({ icon, title, description }, key) => (
       <NavListMenuItems
-        placeholder="Text"
         key={key}
         icon={icon}
         title={title}
@@ -176,7 +164,6 @@ function NavListMenu() {
   const renderItemsResource = navListMenuResource.map(
     ({ icon, title, description }, key) => (
       <NavListMenuItems
-        placeholder="Text"
         key={key}
         icon={icon}
         title={title}

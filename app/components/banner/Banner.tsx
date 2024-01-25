@@ -1,20 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import banner1 from "../assets/banner/banner1.webp";
-import banner2 from "../assets/banner/banner2.png";
-import banner5 from "../assets/banner/banner5.png";
-import banner6 from "../assets/banner/banner6.webp";
-import banner7 from "../assets/banner/banner7.webp";
-import banner8 from "../assets/banner/banner8.webp";
-import banner9 from "../assets/banner/banner9.webp";
-import banner10 from "../assets/banner/banner10.webp";
 import { Button } from "@material-tailwind/react";
+import {
+  banner1,
+  banner10,
+  banner5,
+  banner6,
+  banner7,
+  banner8,
+  banner9,
+} from "../assets/banner/banner";
 
 // List of banner images
 const bannerImages = [
   banner1,
-  banner2,
   banner5,
   banner6,
   banner7,
@@ -37,7 +37,7 @@ export default function Banner() {
   }, []);
 
   return (
-    <div className="relative py-16 lg:pt-0 lg:flex-col lg:pb-0 mb-10">
+    <div className="relative lg:pt-0 lg:flex-col lg:pb-0 mb-5 h-full lg:h-[450px]">
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
           className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
@@ -60,23 +60,24 @@ export default function Banner() {
           alt=""
         />
       </div>
-      <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
-        <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
+      <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:max-w-screen-xl">
+        <div className="mb-16 lg:my-12 lg:max-w-lg lg:pr-5">
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
             Latest Release
           </p>
-          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-            Explore the Latest Gadgets
-            <br className="hidden md:block" />
-            at Tec Zone{" "}
+          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">
+            <span className="md:mb-4">Explore the Latest Gadgets at</span>
+            <br className="hidden md:block" />{" "}
+            <span className="text-[#F5A]">Tec Zone {""} </span>
             <span className="inline-block text-deep-purple-accent-400">
               Tech Hub
             </span>
           </h2>
           <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
             Discover a wide range of cutting-edge technology, from smartphones
-            to smart home devices. Stay ahead with Tec Zone is latest releases
-            and reviews.
+            to smart home devices. Stay ahead with{" "}
+            <span className="text-[#f5a]">Tec Zone</span> is latest releases and
+            reviews.
           </p>
 
           <div className="flex items-center gap-3">

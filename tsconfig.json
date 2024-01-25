@@ -3,6 +3,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "types": ["next"],
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -26,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/components/navLink"
+    "app/components/common/navLink"
   ],
   "exclude": ["node_modules"]
 }

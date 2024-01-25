@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 import { PrinterIcon } from "@heroicons/react/24/outline";
 import { PiPrinter } from "react-icons/pi";
-import Icon from "../ui/icon/Icon";
+import Icon from "../../ui/icon/Icon";
 import { Button } from "@material-tailwind/react";
 
 const Footer: FC = () => {

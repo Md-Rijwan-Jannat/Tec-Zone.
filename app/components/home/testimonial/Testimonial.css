@@ -1,0 +1,210 @@
+/* Testimonial.module.css */
+
+:root {
+  --rotate-speed: 40;
+  --count: 8; /* Default count, the DOM element should override this */
+  --easeInOutSine: cubic-bezier(0.37, 0, 0.63, 1);
+  --easing: cubic-bezier(0, 0.37, 1, 0.63);
+}
+
+.void {
+  aspect-ratio: 1 / 1;
+}
+
+/* Add more local styles for other components */
+
+.ul:hover * {
+  animation-play-state: paused;
+}
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  outline: 2px dotted magenta;
+  z-index: 1;
+}
+.li {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* 	outline: 2px dashed cyan; */
+  width: 100%;
+  animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
+}
+.card {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 16px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #535062;
+  animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
+}
+.a {
+  text-decoration: none;
+  color: unset;
+}
+.model-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f5a;
+  display: block;
+}
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.li:nth-child(2),
+.li:nth-child(2) .card {
+  animation-delay: calc((var(--rotate-speed) / var(--count)) * -1s);
+}
+.li:nth-child(3),
+.li:nth-child(3) .card {
+  animation-delay: calc((var(--rotate-speed) / var(--count)) * -2s);
+}
+.li:nth-child(4),
+.li:nth-child(4) .card {
+  animation-delay: calc((var(--rotate-speed) / var(--count)) * -3s);
+}
+.li:nth-child(5),
+.li:nth-child(5) .card {
+  animation-delay: calc((var(--rotate-speed) / var(--count)) * -4s);
+}
+.li:nth-child(6),
+.li:nth-child(6) .card {
+  animation-delay: calc((var(--rotate-speed) / var(--count)) * -5s);
+}
+.li:nth-child(7),
+.li:nth-child(7) .card {
+  animation-delay: calc((var(--rotate-speed) / var(--count)) * -6s);
+}
+.li:nth-child(8),
+.li:nth-child(8) .card {
+  animation-delay: calc((var(--rotate-speed) / var(--count)) * -7s);
+}
+
+@keyframes rotateCW {
+  from {
+    transform: translate3d(0px, -50%, -1px) rotate(-45deg);
+  }
+  to {
+    transform: translate3d(0px, -50%, 0px) rotate(-315deg);
+  }
+}
+@keyframes rotateCCW {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+}
+@keyframes pulseGlow {
+  from {
+    background-size: 60%;
+  }
+  to {
+    background-size: 100%;
+  }
+}
+
+.center-circle {
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3),
+    0px 30px 60px -12px rgba(12, 5, 46, 0.25);
+  border-radius: 50%;
+}
+.second-circle {
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #f5f4fe;
+  opacity: 0.5;
+  box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3),
+    0px 30px 60px -12px rgba(12, 5, 46, 0.25);
+  border-radius: 50%;
+}
+.last-circle {
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #f5f4fe;
+  opacity: 0.25;
+  box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3),
+    0px 30px 60px -12px rgba(12, 5, 46, 0.25);
+  border-radius: 50%;
+}
+.crop {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1)
+  );
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  animation: pulseGlow 5s linear infinite alternate;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+    100% 50% at 100% 50%,
+    rgba(229, 26, 222, 0.25) 0%,
+    rgba(227, 26, 229, 0.248) 11.79%,
+    rgba(225, 26, 229, 0.241896) 21.38%,
+    rgba(223, 26, 229, 0.2324) 29.12%,
+    rgba(221, 26, 229, 0.219837) 35.34%,
+    rgba(219, 26, 229, 0.20463) 40.37%,
+    rgba(217, 26, 229, 0.1872) 44.56%,
+    rgba(215, 26, 229, 0.16797) 48.24%,
+    rgba(213, 26, 229, 0.147363) 51.76%,
+    rgba(211, 26, 229, 0.1258) 55.44%,
+    rgba(209, 26, 229, 0.103704) 59.63%,
+    rgba(207, 26, 229, 0.0814963) 64.66%,
+    rgba(205, 26, 229, 0.0596) 70.88%,
+    rgba(203, 26, 229, 0.038437) 78.62%,
+    rgba(201, 26, 229, 0.0184296) 88.21%,
+    rgba(199, 26, 229, 0) 100%
+  );
+}
+.mask:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  right: 0;
+  display: block;
+  background-image: linear-gradient(
+    180deg,
+    rgba(60, 26, 229, 0) 0%,
+    #f5a 50%,
+    rgba(60, 26, 229, 0) 100%
+  );
+}

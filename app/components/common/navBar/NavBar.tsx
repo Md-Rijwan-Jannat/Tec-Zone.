@@ -5,8 +5,8 @@ import Link from "next/link";
 import React from "react";
 import { FaRegUser, FaShopify } from "react-icons/fa";
 import { MdSearch, MdOutlineLocalOffer } from "react-icons/md";
-import { SearchModal } from "../modals/SearchModal";
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
+import { SearchModal } from "../modals/SearchModal";
 import { UserModal } from "../modals/UserModal";
 
 const Navbar: React.FC = () => {

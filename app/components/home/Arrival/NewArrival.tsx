@@ -6,6 +6,7 @@ import "keen-slider/keen-slider.min.css"; // Import KeenSlider styles
 import Title from "../../ui/title/Title";
 import { Button } from "@material-tailwind/react";
 import ArrivalCard from "./ArrivalCard";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 interface TestimonialSectionProps {}
 
@@ -15,7 +16,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = () => {
       loop: true,
       slides: {
         origin: "center",
-        perView: 1.25,
+        perView: 1,
         spacing: 16,
       },
       breakpoints: {
@@ -53,20 +54,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = () => {
                 id="keen-slider-previous"
                 className="rounded-full border border-[#F5A]  bg-white p-3 text-[#F5A] transition hover:bg-[#F5A] hover:text-white"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="h-5 w-5 rtl:rotate-180"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 19.5L8.25 12l7.5-7.5"
-                  />
-                </svg>
+                <FaArrowCircleLeft size={20} />
               </Button>
 
               <Button
@@ -75,20 +63,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = () => {
                 id="keen-slider-next"
                 className="rounded-full border border-[#F5A]  bg-white p-3 text-[#F5A] transition hover:bg-[#F5A] hover:text-white"
               >
-                <svg
-                  className="h-5 w-5 rtl:rotate-180"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 5l7 7-7 7"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  />
-                </svg>
+                <FaArrowCircleRight size={20} />
               </Button>
             </div>
           </div>

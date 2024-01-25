@@ -2,10 +2,8 @@
 
 .arrival {
   width: 300px;
-  height: 400px;
+  height: 300px;
   margin: 10px;
-  background-color: white;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .arrival:hover .arrival__caption {
   top: 50%;
@@ -18,11 +16,11 @@
   top: 0;
 }
 .arrival:hover .arrival__snippet {
-  margin: 20px 0;
+  margin: 15px;
 }
 .arrival__thumb {
   position: relative;
-  max-height: 400px;
+  max-height: 300px;
   overflow: hidden;
 }
 @media (min-width: 1024px) {
@@ -39,7 +37,7 @@
   height: 100%;
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.5) 40%,
+    rgba(239, 83, 174, 0.5) 40%,
     rgba(255, 255, 255, 0) 100%
   );
   transition: 0.3s;
@@ -72,7 +70,6 @@
   display: -webkit-box;
   max-height: 85px;
   overflow: hidden;
-  font-family: "Playfair Display", serif;
   font-size: 23px;
   line-height: 28px;
   text-shadow: 0px 1px 5px black;
@@ -85,7 +82,6 @@
   max-height: 150px;
   margin: 20px 0;
   overflow: hidden;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-overflow: ellipsis;
@@ -101,16 +97,15 @@
 .arrival__button {
   display: inline-block;
   padding: 10px 20px;
-  color: white;
+  color: black;
   border: 1px solid white;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.3s;
 }
 .arrival__button:hover {
-  color: black;
+  color: #f5a;
   background-color: white;
 }
 
@@ -124,7 +119,6 @@
   padding: 20px 10px;
   background-color: white;
   transform: translateX(-50%);
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   text-align: center;
 }

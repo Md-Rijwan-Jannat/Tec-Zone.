@@ -18,12 +18,12 @@ export default function Testimonial() {
             style={{ "--count": 6 } as React.CSSProperties}
           >
             <li className="li">
-              <div className="card W-56 p-1 md:p-2 lg:p-3">
+              <div className="card W-56 p-2 md:p-3">
                 <Link className="a" href="">
                   <span className="model-name text-[9px] md:text-[14px] lg:text-sm">
                     Gretel-ACTGAN
                   </span>
-                  <span className="text-[6px] md:text-[7px]">
+                  <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
                     sm px [14] Model for generating highly dimensional, mostly
                     numeric, tabular data
                   </span>
@@ -31,13 +31,13 @@ export default function Testimonial() {
               </div>
             </li>
             <li className="li">
-              <div className="card W-56 p-1 md:p-2 lg:p-3">
+              <div className="card W-56 p-2 md:p-3">
                 <div className="style">
                   <Link className="a" href="">
                     <span className="model-name text-[7px] md:text-lg">
                       Gretel-ACTGAN
                     </span>
-                    <span className="text-[6px] md:text-[7px]">
+                    <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
                       sm px [14] Model for generating highly dimensional, mostly
                       numeric, tabular data
                     </span>
@@ -46,12 +46,12 @@ export default function Testimonial() {
               </div>
             </li>
             <li className="li">
-              <div className="card W-56 p-1 md:p-2 lg:p-3">
+              <div className="card W-56 p-2 md:p-3">
                 <Link className="a" href="">
                   <span className="model-name text-[7px] md:text-lg">
                     Gretel-ACTGAN
                   </span>
-                  <span className="text-[6px] md:text-[7px]">
+                  <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
                     sm [14] Model for generating highly dimensional, mostly
                     numeric, tabular data
                   </span>
@@ -59,13 +59,13 @@ export default function Testimonial() {
               </div>
             </li>
             <li className="li">
-              <div className="card W-56 p-1 md:p-2 lg:p-3">
+              <div className="card W-56 p-2 md:p-3">
                 <div className="style">
                   <Link className="a" href="">
                     <span className="model-name text-[7px] md:text-lg">
                       Gretel-ACTGAN
                     </span>
-                    <span className="text-[6px] md:text-[7px]">
+                    <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
                       sm px [14] Model for generating highly dimensional, mostly
                       numeric, tabular data
                     </span>
@@ -74,13 +74,13 @@ export default function Testimonial() {
               </div>
             </li>
             <li className="li">
-              <div className="card W-56 p-1 md:p-2 lg:p-3">
+              <div className="card W-56 p-2 md:p-3">
                 <div className="style">
                   <Link className="a" href="">
                     <span className="model-name text-[7px] md:text-lg">
                       Gretel-ACTGAN
                     </span>
-                    <span className="text-[6px] md:text-[7px]">
+                    <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
                       sm px [14] Model for generating highly dimensional, mostly
                       numeric, tabular data
                     </span>
@@ -89,12 +89,12 @@ export default function Testimonial() {
               </div>
             </li>
             <li className="li">
-              <div className="card W-56 p-1 md:p-2 lg:p-3">
+              <div className="card W-56 p-2 md:p-3">
                 <Link className="a" href="">
                   <span className="model-name text-[7px] md:text-lg">
                     Gretel-ACTGAN
                   </span>
-                  <span className="text-[6px] md:text-[7px]">
+                  <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
                     sm [14] Model for generating highly dimensional, mostly
                     numeric, tabular data
                   </span>

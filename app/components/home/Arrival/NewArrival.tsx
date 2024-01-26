@@ -16,14 +16,35 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = () => {
       loop: true,
       slides: {
         origin: "center",
-        perView: 1,
+        perView: 1.25,
         spacing: 16,
       },
       breakpoints: {
+        "(min-width: 640px)": {
+          slides: {
+            origin: "auto",
+            perView: 2, // 2 items per view on small devices
+            spacing: 16,
+          },
+        },
+        "(min-width: 768px)": {
+          slides: {
+            origin: "auto",
+            perView: 3, // 3 items per view on medium devices
+            spacing: 32,
+          },
+        },
         "(min-width: 1024px)": {
           slides: {
             origin: "auto",
-            perView: 2.5,
+            perView: 4, // 4 items per view on large devices
+            spacing: 32,
+          },
+        },
+        "(min-width: 1280px)": {
+          slides: {
+            origin: "auto",
+            perView: 5, // 5 items per view on extra-large devices
             spacing: 32,
           },
         },
@@ -71,32 +92,72 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = () => {
           <div className="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
             <div id="keen-slider" className="keen-slider">
               <div className="keen-slider__slide">
-                <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
-                  <div>
+                <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+                  <div className="rounded-md">
                     {/* Arrival Card here */}
                     <ArrivalCard />
                   </div>
                 </blockquote>
               </div>
               <div className="keen-slider__slide">
-                <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
-                  <div>
+                <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+                  <div className="rounded-md">
                     {/* Arrival Card here */}
                     <ArrivalCard />
                   </div>
                 </blockquote>
               </div>
               <div className="keen-slider__slide">
-                <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
-                  <div>
+                <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+                  <div className="rounded-md">
                     {/* Arrival Card here */}
                     <ArrivalCard />
                   </div>
                 </blockquote>
               </div>
               <div className="keen-slider__slide">
-                <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
-                  <div>
+                <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+                  <div className="rounded-md">
+                    {/* Arrival Card here */}
+                    <ArrivalCard />
+                  </div>
+                </blockquote>
+              </div>
+              <div className="keen-slider__slide">
+                <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+                  <div className="rounded-md">
+                    {/* Arrival Card here */}
+                    <ArrivalCard />
+                  </div>
+                </blockquote>
+              </div>
+              <div className="keen-slider__slide">
+                <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+                  <div className="rounded-md">
+                    {/* Arrival Card here */}
+                    <ArrivalCard />
+                  </div>
+                </blockquote>
+              </div>
+              <div className="keen-slider__slide">
+                <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+                  <div className="rounded-md">
+                    {/* Arrival Card here */}
+                    <ArrivalCard />
+                  </div>
+                </blockquote>
+              </div>
+              <div className="keen-slider__slide">
+                <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+                  <div className="rounded-md">
+                    {/* Arrival Card here */}
+                    <ArrivalCard />
+                  </div>
+                </blockquote>
+              </div>
+              <div className="keen-slider__slide">
+                <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+                  <div className="rounded-md">
                     {/* Arrival Card here */}
                     <ArrivalCard />
                   </div>

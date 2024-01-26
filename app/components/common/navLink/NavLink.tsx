@@ -49,7 +49,7 @@ function NavListMenuItems({
         placeholder="menu"
         className="flex items-center gap-3 rounded-lg"
       >
-        <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+        <div className="flex items-center justify-center rounded-lg bg-white p-2 ">
           <Icon strokeWidth={2} className="h-6 text-gray-900 w-6" />
         </div>
         <div>

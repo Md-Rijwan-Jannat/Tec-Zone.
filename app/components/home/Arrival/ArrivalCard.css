@@ -1,9 +1,6 @@
 /* Arrival arrival */
-
 .arrival {
-  width: 300px;
-  height: 300px;
-  margin: 10px;
+  border-radius: 10px;
 }
 .arrival:hover .arrival__caption {
   top: 50%;
@@ -22,10 +19,11 @@
   position: relative;
   max-height: 300px;
   overflow: hidden;
+  border-radius: 10px;
 }
 @media (min-width: 1024px) {
   .arrival__thumb {
-    max-height: 500px;
+    max-height: 300px;
   }
 }
 .arrival__thumb::after {
@@ -70,20 +68,16 @@
   display: -webkit-box;
   max-height: 85px;
   overflow: hidden;
-  font-size: 23px;
-  line-height: 28px;
-  text-shadow: 0px 1px 5px black;
+  line-height: 15px;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 .arrival__snippet {
   display: -webkit-box;
-  max-height: 150px;
-  margin: 20px 0;
+  margin: 15px;
   overflow: hidden;
-  font-size: 16px;
-  line-height: 20px;
+  line-height: 10px;
   text-overflow: ellipsis;
   transition: 0.5s ease-in-out;
   -webkit-line-clamp: 5;
@@ -91,13 +85,12 @@
 }
 @media (min-width: 1024px) {
   .arrival__snippet {
-    margin: 60px 0;
+    margin: 80px 0;
   }
 }
 .arrival__button {
   display: inline-block;
-  padding: 10px 20px;
-  color: black;
+  color: white;
   border: 1px solid white;
   font-size: 12px;
   text-transform: uppercase;

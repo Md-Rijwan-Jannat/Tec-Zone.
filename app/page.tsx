@@ -5,6 +5,7 @@ import BestDeal from "./components/home/bestDeal/BestDeal";
 import Testimonial from "./components/home/testimonial/Testimonial";
 import { FeaturesProducts } from "./components/home/features/FeaturesProducts";
 import { NewArrival } from "./components/home/arrival/NewArrival";
+import { Products } from "./components/home/products/Products";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <BestDeal />
         <NewArrival />
         <FeaturesProducts />
+        <Products />
         <Testimonial />
       </div>
       <WebsiteModal />

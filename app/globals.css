@@ -13,6 +13,11 @@
   width: 7px; /* Set the width of the scrollbar */
 }
 
+/* card shadow  */
+:hover.hover_shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: rgba(

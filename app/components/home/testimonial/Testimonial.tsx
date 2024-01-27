@@ -23,7 +23,7 @@ export default function Testimonial() {
                   <span className="model-name text-[9px] md:text-[14px] lg:text-sm">
                     Gretel-ACTGAN
                   </span>
-                  <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
+                  <span className="text-[6px] md:text-[7px] lg:text-[13px] h-5">
                     sm px [14] Model for generating highly dimensional, mostly
                     numeric, tabular data
                   </span>
@@ -37,7 +37,7 @@ export default function Testimonial() {
                     <span className="model-name text-[7px] md:text-lg">
                       Gretel-ACTGAN
                     </span>
-                    <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
+                    <span className="text-[6px] md:text-[7px] lg:text-[13px] h-5">
                       sm px [14] Model for generating highly dimensional, mostly
                       numeric, tabular data
                     </span>
@@ -51,7 +51,7 @@ export default function Testimonial() {
                   <span className="model-name text-[7px] md:text-lg">
                     Gretel-ACTGAN
                   </span>
-                  <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
+                  <span className="text-[6px] md:text-[7px] lg:text-[13px] h-5">
                     sm [14] Model for generating highly dimensional, mostly
                     numeric, tabular data
                   </span>
@@ -65,7 +65,7 @@ export default function Testimonial() {
                     <span className="model-name text-[7px] md:text-lg">
                       Gretel-ACTGAN
                     </span>
-                    <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
+                    <span className="text-[6px] md:text-[7px] lg:text-[13px] h-5">
                       sm px [14] Model for generating highly dimensional, mostly
                       numeric, tabular data
                     </span>
@@ -80,7 +80,7 @@ export default function Testimonial() {
                     <span className="model-name text-[7px] md:text-lg">
                       Gretel-ACTGAN
                     </span>
-                    <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
+                    <span className="text-[6px] md:text-[7px] lg:text-[13px] h-5">
                       sm px [14] Model for generating highly dimensional, mostly
                       numeric, tabular data
                     </span>
@@ -94,7 +94,7 @@ export default function Testimonial() {
                   <span className="model-name text-[7px] md:text-lg">
                     Gretel-ACTGAN
                   </span>
-                  <span className="text-[6px] md:text-[7px] lg:text-[13px] space-y-0">
+                  <span className="text-[6px] md:text-[7px] lg:text-[13px] h-5">
                     sm [14] Model for generating highly dimensional, mostly
                     numeric, tabular data
                   </span>

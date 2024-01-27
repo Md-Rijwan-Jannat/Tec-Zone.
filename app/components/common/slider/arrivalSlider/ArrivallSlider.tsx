@@ -19,13 +19,6 @@ interface Product {
 const productData: Product[] = [
   {
     image:
-      "https://adminapi.applegadgetsbd.com/storage/media/thumb/Galaxy-S23-Ultra-Cream-1280.jpg",
-    product_name: "Galaxy S23 Ultra 5G",
-    description:
-      "A powerful 5G smartphone with a stunning display and advanced camera features.",
-  },
-  {
-    image:
       "https://adminapi.applegadgetsbd.com/storage/media/thumb/Galaxy-S23-Ultra-Graphite-7411.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:

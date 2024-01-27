@@ -6,6 +6,7 @@ import {
   DialogFooter,
   Button,
 } from "@material-tailwind/react";
+import Image from "next/image";
 
 export default function WebsiteModal() {
   const [open, setOpen] = useState<boolean>(false);
@@ -24,6 +25,7 @@ export default function WebsiteModal() {
 
   return (
     <Dialog
+      className="w-full md:w-[320px]"
       placeholder={""}
       open={open}
       handler={() => setOpen(false)}
@@ -32,15 +34,21 @@ export default function WebsiteModal() {
         unmount: { scale: 0.9, y: -100 },
       }}
     >
-      <DialogHeader className="text-[#F5A]" placeholder={""}>
-        Tec Zone new arrival.
-      </DialogHeader>
-
       <DialogBody placeholder={""}>
-        The key to more success is to have a lot of pillows. Put it this way, it
-        took me twenty-five years to get these plants, twenty-five years of
-        blood, sweat, and tears, and I&apos;m never giving up, I&apos;m just
-        getting started. I&apos;m up to something. Fan luv.
+        <Image
+          width={600}
+          height={600}
+          alt="New arrival"
+          className="relative"
+          src={
+            "https://adminapi.applegadgetsbd.com/storage/media/large/Alpine-Loop-Blue-3303.png"
+          }
+        ></Image>
+        <div className="absolute top-0 right-0">
+          <span className="bg-[#f5a] px-2 py-1 text-gray-50 text-[10px] md:text-[12px]">
+            20% OFF
+          </span>
+        </div>
       </DialogBody>
       <DialogFooter placeholder={""}>
         <Button

@@ -37,7 +37,7 @@ export default function Banner() {
   }, []);
 
   return (
-    <div className="relative lg:pt-0 lg:flex-col lg:pb-0 mb-5 h-full lg:h-[450px]">
+    <div className="relative lg:pt-0 lg:flex-col lg:pb-0 mb-5 h-full lg:h-[400px]">
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
           className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
@@ -60,7 +60,7 @@ export default function Banner() {
           alt=""
         />
       </div>
-      <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:max-w-screen-xl">
+      <div className="relative flex flex-col items-start text-start w-full max-w-xl px-4 md:px-0 lg:max-w-screen-xl">
         <div className="mb-16 lg:my-12 lg:max-w-lg lg:pr-5">
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-black uppercase rounded-full bg-teal-accent-400">
             Latest Release
@@ -73,7 +73,7 @@ export default function Banner() {
               Tech Hub
             </span>
           </h2>
-          <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+          <p className="pr-5 mb-5 lg:mb-14 mt-5 text-base text-gray-700 md:text-lg">
             Discover a wide range of cutting-edge technology, from smartphones
             to smart home devices. Stay ahead with{" "}
             <span className="text-[#f5a]">Tec Zone</span> is latest releases and

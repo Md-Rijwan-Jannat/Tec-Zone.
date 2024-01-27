@@ -45,6 +45,7 @@ import { HiOutlineMagnifyingGlassPlus } from "react-icons/hi2";
 import { TbPentagonX } from "react-icons/tb";
 import { GrCloudSoftware } from "react-icons/gr";
 import { RiTeamLine } from "react-icons/ri";
+import { NavListMenuItems } from "../navLink/NavLink";
 
 export const navListMenuDesktop = [
   {
@@ -387,3 +388,85 @@ export const navListMenuResource = [
     icon: TagIcon,
   },
 ];
+
+//
+export const renderItemsDesktop = navListMenuDesktop.map(
+  ({ icon, title, description }, key) => (
+    <NavListMenuItems
+      key={key}
+      icon={icon}
+      title={title}
+      description={description}
+    />
+  )
+);
+export const renderItemsLaptop = navListMenuLaptop.map(
+  ({ icon, title, description }, key) => (
+    <NavListMenuItems
+      key={key}
+      icon={icon}
+      title={title}
+      description={description}
+    />
+  )
+);
+export const renderItemsMonitor = navListMenuMonitor.map(
+  ({ icon, title, description }, key) => (
+    <NavListMenuItems
+      key={key}
+      icon={icon}
+      title={title}
+      description={description}
+    />
+  )
+);
+export const renderItemsTablet = navListMenuTablet.map(
+  ({ icon, title, description }, key) => (
+    <NavListMenuItems
+      key={key}
+      icon={icon}
+      title={title}
+      description={description}
+    />
+  )
+);
+export const renderItemsPhone = navListMenuPhone.map(
+  ({ icon, title, description }, key) => (
+    <NavListMenuItems
+      key={key}
+      icon={icon}
+      title={title}
+      description={description}
+    />
+  )
+);
+export const renderItemsCamera = navListMenuCamera.map(
+  ({ icon, title, description }, key) => (
+    <NavListMenuItems
+      key={key}
+      icon={icon}
+      title={title}
+      description={description}
+    />
+  )
+);
+export const renderItemsOthers = navListMenuOthers.map(
+  ({ icon, title, description }, key) => (
+    <NavListMenuItems
+      key={key}
+      icon={icon}
+      title={title}
+      description={description}
+    />
+  )
+);
+export const renderItemsResource = navListMenuResource.map(
+  ({ icon, title, description }, key) => (
+    <NavListMenuItems
+      key={key}
+      icon={icon}
+      title={title}
+      description={description}
+    />
+  )
+);

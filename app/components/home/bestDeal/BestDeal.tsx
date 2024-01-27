@@ -40,9 +40,9 @@ const BestDeal: React.FC = () => {
             key={item.id}
           >
             <Image
-              className="rounded-2xl w-full h-full"
-              width={1000}
-              height={1200}
+              className="rounded-2xl w-[100px h-[70px] md:w-full md:h-full"
+              width={500}
+              height={500}
               src={item.image}
               alt={item.name}
             />

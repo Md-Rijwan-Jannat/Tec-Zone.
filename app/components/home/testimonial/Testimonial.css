@@ -29,13 +29,13 @@
 .li {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
   /* 	outline: 2px dashed cyan; */
   width: 100%;
   animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
 .card {
-  width: 27%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -108,7 +108,7 @@
 }
 @keyframes pulseGlow {
   from {
-    background-size: 60%;
+    background-size: 70%;
   }
   to {
     background-size: 100%;
@@ -118,7 +118,6 @@
 .center-circle {
   position: absolute;
   aspect-ratio: 1 / 1;
-  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background: #ffffff;
@@ -129,7 +128,6 @@
 .second-circle {
   position: absolute;
   aspect-ratio: 1 / 1;
-  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background: #f5f4fe;
@@ -141,7 +139,6 @@
 .last-circle {
   position: absolute;
   aspect-ratio: 1 / 1;
-  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background: #f5f4fe;
@@ -164,9 +161,8 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 50%;
   animation: pulseGlow 5s linear infinite alternate;
-  background-position: 100% 50%;
+  background-position: 100% 30%;
   background-repeat: no-repeat;
   background-image: radial-gradient(
     100% 50% at 100% 50%,
@@ -192,7 +188,7 @@
   content: "";
   position: absolute;
   width: 1px;
-  height: 60%;
+  height: 100%;
   right: 0;
   display: block;
   background-image: linear-gradient(

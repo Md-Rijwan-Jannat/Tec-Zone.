@@ -30,6 +30,13 @@ import {
   navListMenuTablet,
   navListMenuCamera,
   navListMenuMonitor,
+  renderItemsLaptop,
+  renderItemsMonitor,
+  renderItemsTablet,
+  renderItemsPhone,
+  renderItemsCamera,
+  renderItemsOthers,
+  renderItemsResource,
 } from "../navData/NavData";
 import Link from "next/link";
 interface NavListItemProps {
@@ -38,7 +45,7 @@ interface NavListItemProps {
   description: string;
 }
 
-function NavListMenuItems({
+export function NavListMenuItems({
   icon: Icon,
   title,
   description,
@@ -47,9 +54,9 @@ function NavListMenuItems({
     <Link href="#" key={title}>
       <MenuItem
         placeholder="menu"
-        className="flex items-center gap-3 rounded-lg"
+        className="flex items-center gap-3 rounded-lg border-none"
       >
-        <div className="flex items-center justify-center rounded-lg bg-white p-2 ">
+        <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 border-none">
           <Icon strokeWidth={2} className="h-6 text-gray-900 w-6" />
         </div>
         <div>
@@ -92,76 +99,6 @@ function NavListMenu() {
   const [isMobileMenuResource, setIsMobileMenuResource] = useState(false);
 
   const renderItemsDesktop = navListMenuDesktop.map(
-    ({ icon, title, description }, key) => (
-      <NavListMenuItems
-        key={key}
-        icon={icon}
-        title={title}
-        description={description}
-      />
-    )
-  );
-  const renderItemsLaptop = navListMenuLaptop.map(
-    ({ icon, title, description }, key) => (
-      <NavListMenuItems
-        key={key}
-        icon={icon}
-        title={title}
-        description={description}
-      />
-    )
-  );
-  const renderItemsMonitor = navListMenuMonitor.map(
-    ({ icon, title, description }, key) => (
-      <NavListMenuItems
-        key={key}
-        icon={icon}
-        title={title}
-        description={description}
-      />
-    )
-  );
-  const renderItemsTablet = navListMenuTablet.map(
-    ({ icon, title, description }, key) => (
-      <NavListMenuItems
-        key={key}
-        icon={icon}
-        title={title}
-        description={description}
-      />
-    )
-  );
-  const renderItemsPhone = navListMenuPhone.map(
-    ({ icon, title, description }, key) => (
-      <NavListMenuItems
-        key={key}
-        icon={icon}
-        title={title}
-        description={description}
-      />
-    )
-  );
-  const renderItemsCamera = navListMenuCamera.map(
-    ({ icon, title, description }, key) => (
-      <NavListMenuItems
-        key={key}
-        icon={icon}
-        title={title}
-        description={description}
-      />
-    )
-  );
-  const renderItemsOthers = navListMenuOthers.map(
-    ({ icon, title, description }, key) => (
-      <NavListMenuItems
-        key={key}
-        icon={icon}
-        title={title}
-        description={description}
-      />
-    )
-  );
-  const renderItemsResource = navListMenuResource.map(
     ({ icon, title, description }, key) => (
       <NavListMenuItems
         key={key}

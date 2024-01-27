@@ -102,11 +102,11 @@ export default function Testimonial() {
               </div>
             </li>
           </ul>
-          <div className="last-circle w-6/12 lg:w-7/12"></div>
-          <div className="second-circle w-4/12 lg:w-5/12"></div>
+          <div className="last-circle w-6/12 lg:w-7/12 left-[40%] md:left-[50%]"></div>
+          <div className="second-circle w-4/12 lg:w-5/12 left-[40%] md:left-[50%]"></div>
         </div>
-        <div className="mask"></div>
-        <div className="center-circle w-[80px] md:w-[150px] xl:w-[230px]"></div>
+        <div className="mask w-[40%] md:w-[50%]"></div>
+        <div className="center-circle w-[80px] md:w-[150px] xl:w-[230px] left-[40%] md:left-[50%]"></div>
       </div>
     </div>
   );

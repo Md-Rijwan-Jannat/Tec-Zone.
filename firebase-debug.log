@@ -1,0 +1,137 @@
+[debug] [2024-01-28T17:38:17.055Z] ----------------------------------------------------------------------
+[debug] [2024-01-28T17:38:17.057Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rijwan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-28T17:38:17.058Z] CLI Version:   13.0.3
+[debug] [2024-01-28T17:38:17.058Z] Platform:      win32
+[debug] [2024-01-28T17:38:17.058Z] Node Version:  v18.18.0
+[debug] [2024-01-28T17:38:17.069Z] Time:          Sun Jan 28 2024 23:38:17 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-01-28T17:38:17.069Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-28T17:38:17.073Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-01-28T17:38:17.203Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-28T17:38:17.203Z] > authorizing via signed-in user (rijwanjannat36@gmail.com)
+[debug] [2024-01-28T17:38:17.204Z] [iam] checking project tec-zone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-28T17:38:17.204Z] > refreshing access token with scopes: []
+[debug] [2024-01-28T17:38:17.206Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-28T17:38:17.206Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-28T17:38:17.459Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-01-28T17:38:17.460Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-28T17:38:17.489Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions [none]
+[debug] [2024-01-28T17:38:17.489Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions x-goog-quota-user=projects/tec-zone
+[debug] [2024-01-28T17:38:17.490Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-28T17:38:17.849Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-01-28T17:38:17.850Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-01-28T17:38:18.937Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions 200
+[debug] [2024-01-28T17:38:18.937Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-28T17:38:18.939Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone [none]
+[debug] [2024-01-28T17:38:19.699Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone 200
+[debug] [2024-01-28T17:38:19.699Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone {"projectId":"tec-zone","projectNumber":"730910156498","displayName":"tec-zone","name":"projects/tec-zone","resources":{"hostingSite":"tec-zone"},"state":"ACTIVE","etag":"1_efdadf71-4004-4843-a88d-d96bf4a5113d"}
+[debug] [2024-01-28T17:38:26.015Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites pageToken=&pageSize=10
+[debug] [2024-01-28T17:38:27.052Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites 200
+[debug] [2024-01-28T17:38:27.052Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites {"sites":[{"name":"projects/tec-zone/sites/tec-zone","defaultUrl":"https://tec-zone.web.app","appId":"1:730910156498:web:38a78a8a2868a64077af0b","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-28T17:38:27.053Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config [none]
+[debug] [2024-01-28T17:38:28.233Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config 200
+[debug] [2024-01-28T17:38:28.234Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config {"projectId":"tec-zone","appId":"1:730910156498:web:38a78a8a2868a64077af0b","storageBucket":"tec-zone.appspot.com","apiKey":"AIzaSyA8fcAwHQ27u2sUeLYrNfDg_188Z6YjIZA","authDomain":"tec-zone.firebaseapp.com","messagingSenderId":"730910156498"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-01-28T17:38:39.767Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone [none]
+[debug] [2024-01-28T17:38:40.622Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone 200
+[debug] [2024-01-28T17:38:40.623Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone {"name":"projects/tec-zone/sites/tec-zone","defaultUrl":"https://tec-zone.web.app","appId":"1:730910156498:web:38a78a8a2868a64077af0b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.0
+
+[info] 
+
+[debug] [2024-01-28T17:39:51.925Z] ----------------------------------------------------------------------
+[debug] [2024-01-28T17:39:51.927Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rijwan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-28T17:39:51.927Z] CLI Version:   13.0.3
+[debug] [2024-01-28T17:39:51.928Z] Platform:      win32
+[debug] [2024-01-28T17:39:51.928Z] Node Version:  v18.18.0
+[debug] [2024-01-28T17:39:51.929Z] Time:          Sun Jan 28 2024 23:39:51 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-01-28T17:39:51.929Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-28T17:39:52.003Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-28T17:39:52.003Z] > authorizing via signed-in user (rijwanjannat36@gmail.com)
+[debug] [2024-01-28T17:39:52.004Z] [iam] checking project tec-zone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-28T17:39:52.006Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions [none]
+[debug] [2024-01-28T17:39:52.006Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions x-goog-quota-user=projects/tec-zone
+[debug] [2024-01-28T17:39:52.006Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-28T17:39:53.430Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions 200
+[debug] [2024-01-28T17:39:53.432Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-28T17:39:53.437Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone [none]
+[debug] [2024-01-28T17:39:53.930Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone 200
+[debug] [2024-01-28T17:39:53.931Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone {"projectId":"tec-zone","projectNumber":"730910156498","displayName":"tec-zone","name":"projects/tec-zone","resources":{"hostingSite":"tec-zone"},"state":"ACTIVE","etag":"1_efdadf71-4004-4843-a88d-d96bf4a5113d"}
+[debug] [2024-01-28T17:39:58.355Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites pageToken=&pageSize=10
+[debug] [2024-01-28T17:39:59.312Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites 200
+[debug] [2024-01-28T17:39:59.312Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites {"sites":[{"name":"projects/tec-zone/sites/tec-zone","defaultUrl":"https://tec-zone.web.app","appId":"1:730910156498:web:38a78a8a2868a64077af0b","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-28T17:39:59.313Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config [none]
+[debug] [2024-01-28T17:40:00.707Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config 200
+[debug] [2024-01-28T17:40:00.709Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config {"projectId":"tec-zone","appId":"1:730910156498:web:38a78a8a2868a64077af0b","storageBucket":"tec-zone.appspot.com","apiKey":"AIzaSyA8fcAwHQ27u2sUeLYrNfDg_188Z6YjIZA","authDomain":"tec-zone.firebaseapp.com","messagingSenderId":"730910156498"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-01-28T17:40:10.044Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone [none]
+[debug] [2024-01-28T17:40:10.874Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone 200
+[debug] [2024-01-28T17:40:10.874Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone {"name":"projects/tec-zone/sites/tec-zone","defaultUrl":"https://tec-zone.web.app","appId":"1:730910156498:web:38a78a8a2868a64077af0b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.0
+
+[info] 
+
+[debug] [2024-01-28T17:41:30.666Z] ----------------------------------------------------------------------
+[debug] [2024-01-28T17:41:30.668Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rijwan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-01-28T17:41:30.669Z] CLI Version:   13.0.3
+[debug] [2024-01-28T17:41:30.669Z] Platform:      win32
+[debug] [2024-01-28T17:41:30.669Z] Node Version:  v18.18.0
+[debug] [2024-01-28T17:41:30.670Z] Time:          Sun Jan 28 2024 23:41:30 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-01-28T17:41:30.670Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-28T17:41:30.758Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-28T17:41:30.760Z] > authorizing via signed-in user (rijwanjannat36@gmail.com)
+[debug] [2024-01-28T17:41:30.761Z] [iam] checking project tec-zone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-28T17:41:30.764Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions [none]
+[debug] [2024-01-28T17:41:30.764Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions x-goog-quota-user=projects/tec-zone
+[debug] [2024-01-28T17:41:30.765Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-28T17:41:32.185Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions 200
+[debug] [2024-01-28T17:41:32.186Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-28T17:41:32.188Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone [none]
+[debug] [2024-01-28T17:41:32.698Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone 200
+[debug] [2024-01-28T17:41:32.699Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone {"projectId":"tec-zone","projectNumber":"730910156498","displayName":"tec-zone","name":"projects/tec-zone","resources":{"hostingSite":"tec-zone"},"state":"ACTIVE","etag":"1_efdadf71-4004-4843-a88d-d96bf4a5113d"}
+[debug] [2024-01-28T17:41:37.062Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites pageToken=&pageSize=10
+[debug] [2024-01-28T17:41:37.991Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites 200
+[debug] [2024-01-28T17:41:37.992Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites {"sites":[{"name":"projects/tec-zone/sites/tec-zone","defaultUrl":"https://tec-zone.web.app","appId":"1:730910156498:web:38a78a8a2868a64077af0b","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-28T17:41:37.995Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config [none]
+[debug] [2024-01-28T17:41:39.246Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config 200
+[debug] [2024-01-28T17:41:39.249Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config {"projectId":"tec-zone","appId":"1:730910156498:web:38a78a8a2868a64077af0b","storageBucket":"tec-zone.appspot.com","apiKey":"AIzaSyA8fcAwHQ27u2sUeLYrNfDg_188Z6YjIZA","authDomain":"tec-zone.firebaseapp.com","messagingSenderId":"730910156498"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-01-28T17:41:48.517Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone [none]
+[debug] [2024-01-28T17:41:49.345Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone 200
+[debug] [2024-01-28T17:41:49.346Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone {"name":"projects/tec-zone/sites/tec-zone","defaultUrl":"https://tec-zone.web.app","appId":"1:730910156498:web:38a78a8a2868a64077af0b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.0
+
+[info] 
+

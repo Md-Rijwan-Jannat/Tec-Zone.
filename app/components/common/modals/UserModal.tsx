@@ -65,7 +65,7 @@ export function UserModal() {
           </Typography>
         </MenuItem>
         <MenuItem placeholder={""}>
-          <Link className="flex items-center gap-2 " href={"/sign-up"}>
+          <Link className="flex items-center gap-2 " href={"/signUp"}>
             {" "}
             <FaSignOutAlt />
             <Typography

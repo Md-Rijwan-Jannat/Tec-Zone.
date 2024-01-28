@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from "./components/ui/loader/Loader";
+import { Loader } from "./components/ui/loader/Loader";
 
 export default function Loading() {
   return (

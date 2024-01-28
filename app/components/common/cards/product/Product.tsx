@@ -10,7 +10,7 @@ interface ProductProps {}
 export const Product: React.FC<ProductProps> = () => {
   return (
     <Link
-      href={"/products/product-details"}
+      href={"/products/productDetails"}
       className="border rounded-md h-full flex items-center flex-col justify-center p-2 relative transition duration-300 ease-in-out hover_shadow shadow-sm cursor-pointer"
     >
       <div className="">

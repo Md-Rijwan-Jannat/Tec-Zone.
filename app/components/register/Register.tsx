@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import Link from "next/link";
 import React from "react";
-import { SocialLogin } from "../sociaLogin/SocialLogin";
+import { SocialLogin } from "../socialLogin/SocialLogin";
 
 export default function Register() {
   return (

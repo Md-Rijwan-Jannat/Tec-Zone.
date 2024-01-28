@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import Title from "../../ui/title/Title";
-import { ArrivalSlider } from "../../common/slider/arrivalSlider/ArrivallSlider";
+import { ArrivalSlider } from "../../common/slider/arrivalSlider/ArrivalSlider";
 
 interface NewArrivalProps {}
 export const NewArrival: React.FC<NewArrivalProps> = () => {

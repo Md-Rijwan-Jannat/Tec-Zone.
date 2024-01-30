@@ -13,7 +13,6 @@ export default function Home() {
       <div>
         <Banner />
         <BestDeal />
-        <NewArrival />
         <FeaturesProducts />
         <Products />
         <Testimonial />

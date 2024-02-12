@@ -4,6 +4,8 @@ import Navbar from "../navBar/NavBar";
 import { NavbarWithMegaMenu } from "../navLink/NavLink";
 import Footer from "../footer/Footer";
 
+export const margin_top = "mt-36 md:mt-44";
+
 interface ContainerProps {
   children: ReactNode;
 }
@@ -11,8 +13,8 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-black py-2 px-1">
-        <div className="container mx-auto">
+      <header className="bg-black py-2 px-1 fixed z-10 w-full">
+        <div className="container mx-auto ">
           <Navbar />
           <NavbarWithMegaMenu />
         </div>

@@ -9,30 +9,27 @@ interface ProductProps {}
 
 export const Product: React.FC<ProductProps> = () => {
   return (
-    <Link
-      href={"/products/productDetails"}
-      className="border rounded-md h-full flex items-center flex-col justify-center p-2 relative transition duration-300 ease-in-out hover_shadow shadow-sm cursor-pointer"
-    >
-      <div className="">
+    <div className="border rounded-md h-full flex items-center flex-col justify-center p-2 relative transition duration-300 ease-in-out hover_shadow shadow-sm cursor-pointer">
+      <Link href={"/products/productDetails"} className="">
         <Image
-          width={2600}
-          height={2600}
-          className="w-full h-full"
+          width={1000}
+          height={1000}
+          className="w-[150px]"
           src={
             "https://adminapi.applegadgetsbd.com/storage/media/large/Alpine-Loop-Blue-3303.png"
           }
           alt="Product Image"
         />
-      </div>
+      </Link>
       <div className="mt-5 text-gray-800">
-        <h3 className="text-[12px] md:text-sm text-center shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px]">
+        <h3 className="text-[12px] md:text-[14px] text-center shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px]">
           Apple Watch Ultra 2 with Alpine Loop GPS + Cellular
         </h3>
         <div className="flex gap-2 items-center justify-center py-3">
-          <span className="line-through text-[12px] md:text-sm text-gray-900 hover:text-[#f5a]">
+          <span className="line-through text-[12px] md:text-[14px] text-gray-900 hover:text-[#f5a]">
             &#2547; 9999
           </span>
-          <span className="text-[12px] md:text-sm hover:text-[#f5a]">
+          <span className="text-[12px] md:text-[14px] hover:text-[#f5a]">
             &#2547; 81000
           </span>
           <IconButton
@@ -68,6 +65,6 @@ export const Product: React.FC<ProductProps> = () => {
           20% OFF
         </span>
       </div>
-    </Link>
+    </div>
   );
 };

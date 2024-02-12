@@ -1,4 +1,5 @@
 import { Button } from "@material-tailwind/react";
+import Link from "next/link";
 import React from "react";
 
 export const Category: React.FC = () => {
@@ -30,7 +31,10 @@ export const Category: React.FC = () => {
   ];
 
   return (
-    <div className="flex items-center flex-wrap gap-3 mb-5 md:mb-10">
+    <Link
+      href={"/productFilterPage"}
+      className="flex items-center flex-wrap gap-3 mb-5 md:mb-10"
+    >
       {brands.map((brand, index) => (
         <Button
           placeholder={""}
@@ -41,6 +45,6 @@ export const Category: React.FC = () => {
           {brand.toLowerCase()}{" "}
         </Button>
       ))}
-    </div>
+    </Link>
   );
 };

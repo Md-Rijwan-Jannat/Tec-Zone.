@@ -29,7 +29,10 @@ export const FeaturesCard: React.FC<FeaturesCardProps> = ({
             {product_name}
           </h2>
           <p className="features__snippet text-[8px] max-h-36">{description}</p>
-          <Link href="#" className="features__button p-1 md:px-2 md:py-1">
+          <Link
+            href="/products/productDetails"
+            className="features__button p-1 md:px-2 md:py-1"
+          >
             View Details
           </Link>
         </figcaption>

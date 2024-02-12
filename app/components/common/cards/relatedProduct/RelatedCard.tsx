@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@material-tailwind/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface RelatedCardProps {
@@ -10,15 +11,17 @@ interface RelatedCardProps {
 const RelatedCard: React.FC<RelatedCardProps> = () => {
   return (
     <div className="flex items-center p-2 border flex-col justify-center relative rounded-md hover_shadow">
-      <Image
-        width={600}
-        height={600}
-        className="rounded mb-3 w-[100px] md:w-[150px]"
-        src={
-          "https://adminapi.applegadgetsbd.com/storage/media/large/3114-22786.jpg"
-        }
-        alt="related product"
-      />
+      <Link href={"/products/productDetails"}>
+        <Image
+          width={600}
+          height={600}
+          className="rounded mb-3 w-[100px] md:w-[150px]"
+          src={
+            "https://adminapi.applegadgetsbd.com/storage/media/large/3114-22786.jpg"
+          }
+          alt="related product"
+        />
+      </Link>
       <div className="mt-5 text-gray-800">
         <h3 className="text-[12px] md:text-sm text-center shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px]">
           Apple Watch Ultra 2 with Alpine Loop GPS + Cellular

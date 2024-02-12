@@ -73,7 +73,7 @@ export const RelatedSlider: React.FC<RelatedSliderProps> = ({ sliderId }) => {
   }, [sliderId]);
 
   return (
-    <div className="px-2">
+    <div className="px-2 mb-5 md:mb-10">
       <div className="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
         <div className="mt-2 flex gap-4 lg:mt-0">
           <Button

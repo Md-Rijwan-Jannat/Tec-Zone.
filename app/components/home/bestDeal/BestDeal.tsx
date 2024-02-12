@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Title from "@/app/components/ui/title/Title";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+
 import {
   deal1,
   deal2,
@@ -30,17 +33,26 @@ const bestDeals: BestDealItem[] = [
 ];
 
 const BestDeal: React.FC = () => {
+  const [sliderRef] = useKeenSlider({
+    breakpoints: {
+      "(min-width: 400px)": {
+        slides: { perView: "auto", spacing: 25 },
+      },
+      "(min-width: 1000px)": {
+        slides: { perView: "auto", spacing: 35 },
+      },
+    },
+    slides: { perView: 1 },
+  });
+
   return (
     <div>
       <Title title={"Best Deal -"} />
-      <section className="flex flex-row md:items-center justify-between gap-5 overflow-x-auto shadow rounded p-2 md:p-4">
+      <div ref={sliderRef} className="keen-slider">
         {bestDeals.map((item) => (
-          <div
-            className="flex flex-col items-center gap-2 rounded-md w-[200px]"
-            key={item.id}
-          >
+          <div className="keen-slider__slide text-center" key={item.id}>
             <Image
-              className="rounded-2xl w-[100px h-[70px] md:w-full md:h-full"
+              className="rounded-2xl w-10/12"
               width={500}
               height={500}
               src={item.image}
@@ -51,7 +63,7 @@ const BestDeal: React.FC = () => {
             </span>
           </div>
         ))}
-      </section>
+      </div>
     </div>
   );
 };

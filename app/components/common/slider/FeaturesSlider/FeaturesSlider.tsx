@@ -80,7 +80,6 @@ const productData: Product[] = [
     description:
       "A popular iPhone with a dual-camera system, A13 Bionic chip, and a Liquid Retina display.",
   },
-  // Add more products similarly
 ];
 
 export const FeaturesSlider: React.FC<FeaturesSliderProps> = ({ sliderId }) => {

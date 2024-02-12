@@ -99,42 +99,42 @@ export const RelatedSlider: React.FC<RelatedSliderProps> = ({ sliderId }) => {
       <div className="-mx-6 mt-2 lg:col-span-2 lg:mx-0">
         <div id={`keen-slider-${sliderId}`} className="keen-slider">
           <div className="keen-slider__slide">
-            <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+            <blockquote className="flex h-full w-8/12 md:w-full flex-col justify-between bg-white p-2">
               <div className="rounded-md">
                 <RelatedCard />
               </div>
             </blockquote>
           </div>
           <div className="keen-slider__slide">
-            <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+            <blockquote className="flex h-full w-8/12 md:w-full flex-col justify-between bg-white p-2">
               <div className="rounded-md">
                 <RelatedCard />
               </div>
             </blockquote>
           </div>
           <div className="keen-slider__slide">
-            <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+            <blockquote className="flex h-full w-8/12 md:w-full flex-col justify-between bg-white p-2">
               <div className="rounded-md">
                 <RelatedCard />
               </div>
             </blockquote>
           </div>
           <div className="keen-slider__slide">
-            <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+            <blockquote className="flex h-full w-8/12 md:w-full flex-col justify-between bg-white p-2">
               <div className="rounded-md">
                 <RelatedCard />
               </div>
             </blockquote>
           </div>
           <div className="keen-slider__slide">
-            <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+            <blockquote className="flex h-full w-8/12 md:w-full flex-col justify-between bg-white p-2">
               <div className="rounded-md">
                 <RelatedCard />
               </div>
             </blockquote>
           </div>
           <div className="keen-slider__slide">
-            <blockquote className="flex h-full w-full flex-col justify-between bg-white p-2">
+            <blockquote className="flex h-full w-8/12 md:w-full flex-col justify-between bg-white p-2">
               <div className="rounded-md">
                 <RelatedCard />
               </div>

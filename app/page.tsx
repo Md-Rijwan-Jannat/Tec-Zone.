@@ -9,7 +9,7 @@ import { Products } from "./components/home/products/Products";
 export default function Home() {
   return (
     <main>
-      <div>
+      <div className="overflow-x-hidden">
         <Banner />
         <BestDeal />
         <FeaturesProducts />

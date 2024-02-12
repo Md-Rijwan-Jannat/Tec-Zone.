@@ -49,14 +49,17 @@ const Navbar: React.FC = () => {
               Search
             </p>
           </div>
-          <div className="flex flex-col items-center gap-1 hover:text-[#F5A]">
+          <Link
+            href={"/shops"}
+            className="flex flex-col items-center gap-1 hover:text-[#F5A]"
+          >
             <IconButton placeholder={""}>
               <FaShopify className="text-28px md:text-[30px] text-[#F5A]"></FaShopify>
             </IconButton>
             <p className="text-[5px] md:text-[8px] lg:text-[10px] hidden md:block">
               Our Shops
             </p>
-          </div>
+          </Link>
           <div className="flex flex-col items-center gap-1 hover:text-[#F5A]">
             <IconButton placeholder={""}>
               <MdOutlineLocalOffer className="text-[18px] md:text-[30px] text-[#F5A]"></MdOutlineLocalOffer>

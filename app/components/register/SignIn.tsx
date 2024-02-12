@@ -8,10 +8,11 @@ import {
 import Link from "next/link";
 import React from "react";
 import { SocialLogin } from "../socialLogin/SocialLogin";
+import { margin_top } from "../common/container/container";
 
 export default function SignIn() {
   return (
-    <div>
+    <div className={`${margin_top}`}>
       <Card placeholder={""} color="transparent" shadow={false}>
         <Typography placeholder={""} variant="h4" color="blue-gray">
           Login
@@ -86,7 +87,10 @@ export default function SignIn() {
             className="mt-4 text-center font-normal"
           >
             Create a new account?{" "}
-            <Link href="/sign-up" className="font-medium text-gray-900">
+            <Link
+              href="/signUp"
+              className="font-medium text-gray-900 hover:text-[#f5a]"
+            >
               Sign up
             </Link>
           </Typography>

@@ -6,31 +6,32 @@ import { Button, IconButton } from "@material-tailwind/react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { motion } from "framer-motion";
+import { FaApple } from "react-icons/fa";
 
 const ProductSlider: React.FC = () => {
   const [images, setImages] = useState([
     {
-      img: "https://adminapi.applegadgetsbd.com/storage/media/large/3710-10824.jpg",
+      img: "https://m.media-amazon.com/images/I/81YKn3lEcEL._AC_SL1500_.jpg",
       color: "#FF5733",
     },
     {
-      img: "https://adminapi.applegadgetsbd.com/storage/media/large/3712-36195.jpg",
+      img: "https://m.media-amazon.com/images/I/716ngMg1+dL._AC_SL1500_.jpg",
       color: "#E1DFDE",
     },
     {
-      img: "https://adminapi.applegadgetsbd.com/storage/media/large/3712-56628.jpg",
+      img: "https://m.media-amazon.com/images/I/91iR0DPuJyL._AC_SL1500_.jpg",
       color: "#161616",
     },
     {
-      img: "https://adminapi.applegadgetsbd.com/storage/media/large/3712-36155.jpg",
+      img: "https://m.media-amazon.com/images/I/818GLXd1ZkL._AC_SL1500_.jpg",
       color: "#7A7979",
     },
     {
-      img: "https://adminapi.applegadgetsbd.com/storage/media/large/3712-95301.jpg",
+      img: "https://m.media-amazon.com/images/I/71lRkh31AFL._AC_SL1500_.jpg",
       color: "#F8A46D",
     },
     {
-      img: "https://adminapi.applegadgetsbd.com/storage/media/large/3712-32363.jpg",
+      img: "https://m.media-amazon.com/images/I/811OP3d3+-L._AC_SL1500_.jpg",
       color: "#F8B6C3",
     },
   ]);
@@ -91,7 +92,7 @@ const ProductSlider: React.FC = () => {
                   alt=""
                   width={600}
                   height={600}
-                  className={`w-24 h-24 rounded-md cursor-pointer ${
+                  className={`w-24 h-24 rounded-md cursor-pointer object-cover ${
                     activeImg === image.img
                       ? "border border-[#f5a]"
                       : "hover:bg-gray-50 hover:bg-opacity-50"
@@ -106,15 +107,10 @@ const ProductSlider: React.FC = () => {
       {/* ABOUT */}
       <div className="flex flex-col gap-4 lg:w-2/4">
         <div>
-          <Image
-            width={300}
-            height={300}
-            className="w-16"
-            src={
-              "https://adminapi.applegadgetsbd.com/storage/media/thumb/Apple-6176.png"
-            }
-            alt="brand"
-          ></Image>
+          <div className="flex flex-row gap-3 items-center">
+            <FaApple className="" />
+            <span className="text-black font-semibold">Apple</span>
+          </div>
           <h1 className="text-xl font-bold">
             MacBook Pro M1 Pro 14-inch 10-CPU 16-GPU
           </h1>

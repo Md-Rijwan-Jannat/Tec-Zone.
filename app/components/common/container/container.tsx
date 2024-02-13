@@ -13,7 +13,7 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-black py-2 px-1 fixed z-50 w-full">
+      <header className="bg-black py-2 px-1 fixed z-[99999] w-full">
         <div className="container mx-auto ">
           <Navbar />
           <NavbarWithMegaMenu />

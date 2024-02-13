@@ -17,7 +17,7 @@ const RelatedCard: React.FC<RelatedCardProps> = () => {
           height={600}
           className="rounded mb-3 w-[100px] md:w-[150px]"
           src={
-            "https://adminapi.applegadgetsbd.com/storage/media/large/3114-22786.jpg"
+            "https://m.media-amazon.com/images/I/814xH1gpidL._AC_SL1500_.jpg"
           }
           alt="related product"
         />

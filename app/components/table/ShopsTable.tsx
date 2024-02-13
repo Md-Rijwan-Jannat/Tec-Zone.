@@ -18,6 +18,7 @@ import {
   Tooltip,
 } from "@material-tailwind/react";
 import { useState } from "react";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 interface TableRow {
   img: string;
@@ -150,7 +151,7 @@ export const ShopsTable: React.FC = () => {
                 crossOrigin={""}
                 placeholder={""}
                 label="Search"
-                icon={<MagnifyingGlassIcon className="h-5 w-5" />}
+                icon={<FaMagnifyingGlass className="w-4 h-4 text-[#f5a]" />}
               />
             </div>
           </div>
@@ -257,7 +258,7 @@ export const ShopsTable: React.FC = () => {
                       <td className={classes}>
                         <Tooltip content="Edit User">
                           <IconButton placeholder={""} variant="text">
-                            <PencilIcon className="h-4 w-4" />
+                            <PencilIcon className="h-4 w-4 text-[#f5a]" />
                           </IconButton>
                         </Tooltip>
                       </td>

@@ -3,11 +3,12 @@ import { Badge, Button, IconButton, Input } from "@material-tailwind/react";
 // import { Button } from '@material-tailwind/react';
 import Link from "next/link";
 import React from "react";
-import { FaRegUser, FaShopify } from "react-icons/fa";
-import { MdSearch, MdOutlineLocalOffer } from "react-icons/md";
+import { FaShopify } from "react-icons/fa";
+import { MdOutlineLocalOffer } from "react-icons/md";
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 import { SearchModal } from "../modals/SearchModal";
 import { UserModal } from "../modals/UserModal";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 const Navbar: React.FC = () => {
   return (
@@ -33,7 +34,7 @@ const Navbar: React.FC = () => {
               crossOrigin="anonymous"
             />
             <div className="!absolute left-3 top-[13px]">
-              <MdSearch className="text-[#F5A] text-[13px] md:text-[17px] hidden md:block"></MdSearch>
+              <FaMagnifyingGlass className="text-[#F5A] text-[13px] md:text-[17px] hidden md:block" />
             </div>
             <div className="border-b border-gray-600"></div>
           </div>
@@ -57,17 +58,20 @@ const Navbar: React.FC = () => {
               <FaShopify className="text-28px md:text-[30px] text-[#F5A]"></FaShopify>
             </IconButton>
             <p className="text-[5px] md:text-[8px] lg:text-[10px] hidden md:block">
-              Our Shops
+              Shops
             </p>
           </Link>
-          <div className="flex flex-col items-center gap-1 hover:text-[#F5A]">
+          <Link
+            href={"/offers"}
+            className="flex flex-col items-center gap-1 hover:text-[#F5A]"
+          >
             <IconButton placeholder={""}>
               <MdOutlineLocalOffer className="text-[18px] md:text-[30px] text-[#F5A]"></MdOutlineLocalOffer>
             </IconButton>
             <p className="text-[5px] md:text-[8px] lg:text-[10px] hidden md:block">
               Offers
             </p>
-          </div>
+          </Link>
           <UserModal />
           <div className="xl:hidden gap-2 flex mr-2">
             <Badge content="5">

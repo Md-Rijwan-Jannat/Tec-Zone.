@@ -25,7 +25,7 @@ export default function WebsiteModal() {
 
   return (
     <Dialog
-      className="w-full md:w-[320px]"
+      className="w-full md:w-[320px] z-[9999999999]"
       placeholder={""}
       open={open}
       handler={() => setOpen(false)}
@@ -41,7 +41,7 @@ export default function WebsiteModal() {
           alt="New arrival"
           className="relative"
           src={
-            "https://adminapi.applegadgetsbd.com/storage/media/large/Alpine-Loop-Blue-3303.png"
+            "https://m.media-amazon.com/images/I/814xH1gpidL._AC_SL1500_.jpg"
           }
         ></Image>
         <div className="absolute top-0 right-0">

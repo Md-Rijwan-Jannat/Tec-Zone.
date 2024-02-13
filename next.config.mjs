@@ -6,6 +6,8 @@ const nextConfig = {
     domains: ["ng.jumia.is"],
     domains: ["adminapi.applegadgetsbd.com"],
     domains: ["adminapi.applegadgetsbd.com"],
+    domains: ["media.binglee.com.au"],
+    domains: ["m.media-amazon.com"],
   },
 };
 

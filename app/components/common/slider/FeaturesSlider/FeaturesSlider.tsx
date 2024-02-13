@@ -19,63 +19,63 @@ interface Product {
 const productData: Product[] = [
   {
     image:
-      "https://adminapi.applegadgetsbd.com/storage/media/thumb/Galaxy-S23-Ultra-Cream-1280.jpg",
+      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
     image:
-      "https://adminapi.applegadgetsbd.com/storage/media/thumb/Galaxy-S23-Ultra-Graphite-7411.jpg",
+      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
     image:
-      "https://adminapi.applegadgetsbd.com/storage/media/thumb/Galaxy-S23-Ultra-Green-3380.jpg",
+      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
     image:
-      "https://adminapi.applegadgetsbd.com/storage/media/thumb/Galaxy-S23-Ultra-Lavender-5788.jpg",
+      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
     image:
-      "https://adminapi.applegadgetsbd.com/storage/media/thumb/Galaxy-S23-Ultra-Lime-8941.jpg",
+      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
     image:
-      "https://adminapi.applegadgetsbd.com/storage/media/thumb/Galaxy-S23-Ultra-Phantom-Black-2756.jpg",
+      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
     image:
-      "https://adminapi.applegadgetsbd.com/storage/media/thumb/Galaxy-S23-Ultra-Red-5487.jpg",
+      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
     image:
-      "https://adminapi.applegadgetsbd.com/storage/media/thumb/iPhone-15-Plus-(2)-(5)-1544.jpg",
+      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
     product_name: "iPhone 15 Pro Max",
     description:
       "A popular iPhone with a dual-camera system, A13 Bionic chip, and a Liquid Retina display.",
   },
   {
     image:
-      "https://adminapi.applegadgetsbd.com/storage/media/thumb/iPhone-15-Plus-(2)-(6)-5363.jpg",
+      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
     product_name: "I Phone 15 pro",
     description:
       "A popular iPhone with a dual-camera system, A13 Bionic chip, and a Liquid Retina display.",

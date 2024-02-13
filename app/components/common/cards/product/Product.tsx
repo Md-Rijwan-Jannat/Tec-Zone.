@@ -16,7 +16,7 @@ export const Product: React.FC<ProductProps> = () => {
           height={1000}
           className="w-[150px]"
           src={
-            "https://adminapi.applegadgetsbd.com/storage/media/large/Alpine-Loop-Blue-3303.png"
+            "https://m.media-amazon.com/images/I/814xH1gpidL._AC_SL1500_.jpg"
           }
           alt="Product Image"
         />

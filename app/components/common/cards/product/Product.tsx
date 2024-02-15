@@ -16,7 +16,7 @@ export const Product: React.FC<ProductProps> = () => {
           height={1000}
           className="w-[150px]"
           src={
-            "https://m.media-amazon.com/images/I/814xH1gpidL._AC_SL1500_.jpg"
+            "https://i.ibb.co/Q97KdgY/Apple-Watch-Ultra-Titanium-Case-with-Alpine-Loop-Orange-a-4706.jpg"
           }
           alt="Product Image"
         />

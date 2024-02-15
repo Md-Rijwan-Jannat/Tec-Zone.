@@ -546,13 +546,13 @@ export function NavbarWithMegaMenu() {
         <div className="hidden lg:block">
           <NavList />
         </div>
-        <div className="hidden gap-2 xl:flex">
+        <Link href={"/bookMark"} className="hidden gap-2 xl:flex">
           <Badge content="5">
             <IconButton placeholder={""}>
               <ShoppingBagIcon className="h-4 w-4 text-[#F5A]" />
             </IconButton>
           </Badge>
-        </div>
+        </Link>
         <IconButton
           placeholder="Your Placeholder Text"
           variant="text"

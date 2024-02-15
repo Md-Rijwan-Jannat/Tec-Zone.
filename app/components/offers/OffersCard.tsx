@@ -23,7 +23,7 @@ export const OffersCard: React.FC = () => {
           <Image
             width={700}
             height={700}
-            src="https://media.binglee.com.au/a/f/b/b/afbbc34d32288a15740372d91eb09eb404ddafc3_Samsung_SM_S928BZYFATS_Mobile_Phones_Hero_2.jpg"
+            src="https://i.ibb.co/6yQxbFr/samsung-offers.webp"
             alt="profile-picture"
           />
           <div

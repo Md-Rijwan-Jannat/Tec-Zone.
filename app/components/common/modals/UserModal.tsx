@@ -23,7 +23,7 @@ export function UserModal() {
   return (
     <Menu>
       <MenuHandler>
-        <div className="flex flex-col items-center gap-1 hover:text-[#F5A]">
+        <div className="flex flex-col items-center gap-1 hover:text-[#F5A] z-50">
           <IconButton placeholder={""}>
             <FaRegUser className="text-25px md:text-[30px] text-[#F5A]"></FaRegUser>
           </IconButton>
@@ -33,12 +33,18 @@ export function UserModal() {
         </div>
       </MenuHandler>
       <MenuList className="mr-2" placeholder={""}>
-        <MenuItem placeholder={""} className="flex items-center gap-2">
-          <FaUser />
-          <Typography placeholder={""} variant="small" className="font-medium">
-            My Profile
-          </Typography>
-        </MenuItem>
+        <Link href={"/userProfile/profile"}>
+          <MenuItem placeholder={""} className="flex items-center gap-2">
+            <FaUser />
+            <Typography
+              placeholder={""}
+              variant="small"
+              className="font-medium"
+            >
+              My Profile
+            </Typography>
+          </MenuItem>
+        </Link>
         <MenuItem placeholder={""} className="flex items-center gap-2">
           <FaEdit />
           <Typography placeholder={""} variant="small" className="font-medium">

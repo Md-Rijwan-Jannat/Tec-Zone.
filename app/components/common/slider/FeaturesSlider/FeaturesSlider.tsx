@@ -18,64 +18,54 @@ interface Product {
 
 const productData: Product[] = [
   {
-    image:
-      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
+    image: "https://i.ibb.co/zxD4zhh/Valentine-Bundle-24-W-7071.jpg",
+    product_name: "Galaxy S23 Ultra 5G",
+    description: "https://i.ibb.co/GdsDfCt/i-Phone-14-Blue-7810.jpg",
+  },
+  {
+    image: "https://i.ibb.co/zxD4zhh/Valentine-Bundle-24-W-7071.jpg",
+    product_name: "I Phone 14 Blue",
+    description:
+      "A powerful 5G smartphone with a stunning display and advanced camera features.",
+  },
+  {
+    image: "https://i.ibb.co/zxD4zhh/Valentine-Bundle-24-W-7071.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
-    image:
-      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
+    image: "https://i.ibb.co/zxD4zhh/Valentine-Bundle-24-W-7071.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
-    image:
-      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
+    image: "https://i.ibb.co/zxD4zhh/Valentine-Bundle-24-W-7071.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
-    image:
-      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
+    image: "https://i.ibb.co/zxD4zhh/Valentine-Bundle-24-W-7071.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
-    image:
-      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
+    image: "https://i.ibb.co/zxD4zhh/Valentine-Bundle-24-W-7071.jpg",
     product_name: "Galaxy S23 Ultra 5G",
     description:
       "A powerful 5G smartphone with a stunning display and advanced camera features.",
   },
   {
-    image:
-      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
-    product_name: "Galaxy S23 Ultra 5G",
-    description:
-      "A powerful 5G smartphone with a stunning display and advanced camera features.",
-  },
-  {
-    image:
-      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
-    product_name: "Galaxy S23 Ultra 5G",
-    description:
-      "A powerful 5G smartphone with a stunning display and advanced camera features.",
-  },
-  {
-    image:
-      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
+    image: "https://i.ibb.co/zxD4zhh/Valentine-Bundle-24-W-7071.jpg",
     product_name: "iPhone 15 Pro Max",
     description:
       "A popular iPhone with a dual-camera system, A13 Bionic chip, and a Liquid Retina display.",
   },
   {
-    image:
-      "https://m.media-amazon.com/images/I/61EOZKXPT1L._AC_UF894,1000_QL80_.jpg",
+    image: "https://i.ibb.co/zxD4zhh/Valentine-Bundle-24-W-7071.jpg",
     product_name: "I Phone 15 pro",
     description:
       "A popular iPhone with a dual-camera system, A13 Bionic chip, and a Liquid Retina display.",

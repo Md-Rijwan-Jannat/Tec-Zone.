@@ -73,13 +73,13 @@ const Navbar: React.FC = () => {
             </p>
           </Link>
           <UserModal />
-          <div className="xl:hidden gap-2 flex mr-2">
+          <Link href={"/bookMark"} className="xl:hidden gap-2 flex mr-2">
             <Badge content="5">
               <IconButton placeholder={""}>
                 <ShoppingBagIcon className="h-4 w-4 text-[#F5A]" />
               </IconButton>
             </Badge>
-          </div>
+          </Link>
         </div>
       </div>
     </nav>

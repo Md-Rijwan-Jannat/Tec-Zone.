@@ -11,28 +11,23 @@ import { FaApple } from "react-icons/fa";
 const ProductSlider: React.FC = () => {
   const [images, setImages] = useState([
     {
-      img: "https://m.media-amazon.com/images/I/81YKn3lEcEL._AC_SL1500_.jpg",
-      color: "#FF5733",
+      img: "https://i.ibb.co/XynJ3CP/Mac-Book-Air-M2-Starlight-2636.jpg",
+
+      color: "#F0E5D3",
     },
     {
-      img: "https://m.media-amazon.com/images/I/716ngMg1+dL._AC_SL1500_.jpg",
-      color: "#E1DFDE",
+      img: "https://i.ibb.co/vZNzHd0/Mac-Book-Air-M2-Space-Gray-5005-1.jpg",
+      color: "#7D7E80",
     },
     {
-      img: "https://m.media-amazon.com/images/I/91iR0DPuJyL._AC_SL1500_.jpg",
-      color: "#161616",
+      img: "https://i.ibb.co/g7CwXHW/Mac-Book-Air-M2-Silver-8305.jpg",
+
+      color: "#E3E4E6",
     },
     {
-      img: "https://m.media-amazon.com/images/I/818GLXd1ZkL._AC_SL1500_.jpg",
-      color: "#7A7979",
-    },
-    {
-      img: "https://m.media-amazon.com/images/I/71lRkh31AFL._AC_SL1500_.jpg",
-      color: "#F8A46D",
-    },
-    {
-      img: "https://m.media-amazon.com/images/I/811OP3d3+-L._AC_SL1500_.jpg",
-      color: "#F8B6C3",
+      img: " https://i.ibb.co/txC8zD1/Mac-Book-Air-M2-Midnight-8137.jpg",
+
+      color: "#2E3641",
     },
   ]);
 
@@ -48,10 +43,10 @@ const ProductSlider: React.FC = () => {
   const [sliderRef] = useKeenSlider({
     breakpoints: {
       "(min-width: 400px)": {
-        slides: { perView: "auto", spacing: 25 },
+        slides: { perView: "auto", spacing: 15 },
       },
       "(min-width: 1000px)": {
-        slides: { perView: "auto", spacing: 35 },
+        slides: { perView: "auto", spacing: 20 },
       },
     },
     slides: { perView: 1 },
@@ -84,8 +79,8 @@ const ProductSlider: React.FC = () => {
           {images.map((image, index) => (
             <div key={index} className="keen-slider__slide">
               <motion.div
-                whileHover={{ scale: 1.1 }} // Add a Framer Motion animation
-                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 0.9 }} // Add a Framer Motion animation
+                whileTap={{ scale: 0.5 }}
               >
                 <Image
                   src={image.img}

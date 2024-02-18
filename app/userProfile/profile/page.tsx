@@ -1,3 +1,4 @@
+"use client";
 import { UserProfileData } from "@/app/components/profile/UserProfileData";
 import React from "react";
 

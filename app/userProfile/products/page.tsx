@@ -1,6 +1,5 @@
 "use client";
 import { ProductsTable } from "@/app/components/table/ProductsTable";
-import UserDashboard from "@/app/components/users/UserDashboard";
 import React from "react";
 
 interface ProductsProps {}

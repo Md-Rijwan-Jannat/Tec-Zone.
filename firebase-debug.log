@@ -135,3 +135,107 @@
 
 [info] 
 
+[debug] [2024-02-15T18:43:28.227Z] ----------------------------------------------------------------------
+[debug] [2024-02-15T18:43:28.229Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rijwan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-02-15T18:43:28.230Z] CLI Version:   13.0.3
+[debug] [2024-02-15T18:43:28.230Z] Platform:      win32
+[debug] [2024-02-15T18:43:28.230Z] Node Version:  v18.18.0
+[debug] [2024-02-15T18:43:28.237Z] Time:          Fri Feb 16 2024 00:43:28 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-02-15T18:43:28.237Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-15T18:43:28.241Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-15T18:43:28.379Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-15T18:43:28.380Z] > authorizing via signed-in user (rijwanjannat36@gmail.com)
+[debug] [2024-02-15T18:43:28.380Z] [iam] checking project tec-zone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-15T18:43:28.381Z] > refreshing access token with scopes: []
+[debug] [2024-02-15T18:43:28.382Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-15T18:43:28.382Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-15T18:43:28.683Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-15T18:43:28.684Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-15T18:43:28.796Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions [none]
+[debug] [2024-02-15T18:43:28.798Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions x-goog-quota-user=projects/tec-zone
+[debug] [2024-02-15T18:43:28.798Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-15T18:43:29.081Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-02-15T18:43:29.081Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-02-15T18:43:30.275Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions 200
+[debug] [2024-02-15T18:43:30.276Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tec-zone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-15T18:43:30.280Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone [none]
+[debug] [2024-02-15T18:43:31.038Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone 200
+[debug] [2024-02-15T18:43:31.039Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tec-zone {"projectId":"tec-zone","projectNumber":"730910156498","displayName":"tec-zone","name":"projects/tec-zone","resources":{"hostingSite":"tec-zone"},"state":"ACTIVE","etag":"1_efdadf71-4004-4843-a88d-d96bf4a5113d"}
+[debug] [2024-02-15T18:43:37.153Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites pageToken=&pageSize=10
+[debug] [2024-02-15T18:43:38.271Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites 200
+[debug] [2024-02-15T18:43:38.272Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites {"sites":[{"name":"projects/tec-zone/sites/tec-zone","defaultUrl":"https://tec-zone.web.app","appId":"1:730910156498:web:38a78a8a2868a64077af0b","type":"DEFAULT_SITE"}]}
+[debug] [2024-02-15T18:43:38.275Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config [none]
+[debug] [2024-02-15T18:43:39.729Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config 200
+[debug] [2024-02-15T18:43:39.729Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730910156498:web:38a78a8a2868a64077af0b/config {"projectId":"tec-zone","appId":"1:730910156498:web:38a78a8a2868a64077af0b","storageBucket":"tec-zone.appspot.com","apiKey":"AIzaSyA8fcAwHQ27u2sUeLYrNfDg_188Z6YjIZA","authDomain":"tec-zone.firebaseapp.com","messagingSenderId":"730910156498"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-02-15T18:43:51.289Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone [none]
+[debug] [2024-02-15T18:43:52.144Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone 200
+[debug] [2024-02-15T18:43:52.144Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tec-zone/sites/tec-zone {"name":"projects/tec-zone/sites/tec-zone","defaultUrl":"https://tec-zone.web.app","appId":"1:730910156498:web:38a78a8a2868a64077af0b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.0
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/28) ...
+
+[info]    Generating static pages (7/28) 
+
+[info]    Generating static pages (14/28) 
+
+[info]    Generating static pages (21/28) 
+
+[info] ReferenceError: window is not defined
+    at 60169 (C:\projects\Tec Zone\tec-zone\.next\server\app\userProfile\analytics\page.js:1:392990)
+    at t (C:\projects\Tec Zone\tec-zone\.next\server\webpack-runtime.js:1:127)
+    at 84442 (C:\projects\Tec Zone\tec-zone\.next\server\app\userProfile\analytics\page.js:5:48443)
+    at t (C:\projects\Tec Zone\tec-zone\.next\server\webpack-runtime.js:1:127)
+    at 91848 (C:\projects\Tec Zone\tec-zone\.next\server\app\userProfile\analytics\page.js:1:3260)
+    at t (C:\projects\Tec Zone\tec-zone\.next\server\webpack-runtime.js:1:127)
+    at F (C:\projects\Tec Zone\tec-zone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:94693)
+    at C:\projects\Tec Zone\tec-zone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:97108
+    at W._fromJSON (C:\projects\Tec Zone\tec-zone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:97546)
+    at JSON.parse (<anonymous>)
+
+[info] 
+Error occurred prerendering page "/userProfile/analytics". Read more: https://nextjs.org/docs/messages/prerender-error
+
+ReferenceError: window is not defined
+    at 60169 (C:\projects\Tec Zone\tec-zone\.next\server\app\userProfile\analytics\page.js:1:392990)
+    at t (C:\projects\Tec Zone\tec-zone\.next\server\webpack-runtime.js:1:127)
+    at 84442 (C:\projects\Tec Zone\tec-zone\.next\server\app\userProfile\analytics\page.js:5:48443)
+    at t (C:\projects\Tec Zone\tec-zone\.next\server\webpack-runtime.js:1:127)
+    at 91848 (C:\projects\Tec Zone\tec-zone\.next\server\app\userProfile\analytics\page.js:1:3260)
+    at t (C:\projects\Tec Zone\tec-zone\.next\server\webpack-runtime.js:1:127)
+    at F (C:\projects\Tec Zone\tec-zone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:94693)
+    at C:\projects\Tec Zone\tec-zone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:97108
+    at W._fromJSON (C:\projects\Tec Zone\tec-zone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:97546)
+    at JSON.parse (<anonymous>)
+
+[info]  ✓ Generating static pages (28/28) 
+
+[info] 
+
+[info] > Export encountered errors on following paths:
+	/userProfile/analytics/page: /userProfile/analytics
+
+[debug] [2024-02-15T18:44:31.651Z] Error: ENOENT: no such file or directory, open 'C:\projects\Tec Zone\tec-zone\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

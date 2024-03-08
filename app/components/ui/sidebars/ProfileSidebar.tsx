@@ -97,7 +97,7 @@ export function ProfileSlider() {
                 <ListItemPrefix placeholder={""}>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                 </ListItemPrefix>
-                <Link href={"/userProfile/analytics"}> Analytics</Link>
+                <Link href={"/userProfile/userAnalytics"}> Analytics</Link>
               </ListItem>
               <ListItem placeholder={""}>
                 <ListItemPrefix placeholder={""}>

@@ -4,11 +4,11 @@ import { ProfileDrawer } from "../components/common/modals/ProfileDrawer";
 import BackButton from "../components/ui/button/BackButton";
 import Head from "next/head";
 
-interface DashboardLayoutProps {
+interface UserProfileLayoutProps {
   children: React.ReactNode;
 }
 
-const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
+const UserProfileLayout: React.FC<UserProfileLayoutProps> = ({ children }) => {
   return (
     <div className={margin_top}>
       <Head>
@@ -31,4 +31,4 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   );
 };
 
-export default DashboardLayout;
+export default UserProfileLayout;

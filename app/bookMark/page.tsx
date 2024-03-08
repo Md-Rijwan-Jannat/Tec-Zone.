@@ -2,7 +2,6 @@
 import React from "react";
 import Title from "../components/ui/title/Title";
 import { margin_top } from "../components/common/container/container";
-import { Button } from "@material-tailwind/react";
 import BookMarkCard from "../components/common/cards/bookMarkCard/BookMarkCard";
 import OrderSummary from "../components/common/cards/bookMarkCard/OrderSummary";
 

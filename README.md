@@ -6,9 +6,11 @@ npm run dev
 # or
 yarn dev
 # or
-pnpm dev
+npm dev
 # or
-bun dev
+run dev
+
+
 You can access the live site [here](https://tec-zone.vercel.app).
 
 Open http://localhost:3000 in your browser to view the result.

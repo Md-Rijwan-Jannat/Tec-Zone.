@@ -7,6 +7,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { motion } from "framer-motion";
 import { FaApple } from "react-icons/fa";
+import ImageModal from "../../modals/ImageModal/ImageModal";
 
 const ProductSlider: React.FC = () => {
   const [images, setImages] = useState([
@@ -63,13 +64,14 @@ const ProductSlider: React.FC = () => {
           exit={{ opacity: 0, scale: 0.5 }}
           transition={{ duration: 0.3 }}
         >
-          <Image
+          {/* <Image
             src={activeImg}
             alt=""
             width={500}
             height={500}
             className="w-9/12 md:w-[300px] lg:w-[400px] aspect-square object-cover rounded-xl"
-          />
+          /> */}
+          <ImageModal imageUrl={activeImg} />
         </motion.div>
         {/* Keen Slider */}
         <div

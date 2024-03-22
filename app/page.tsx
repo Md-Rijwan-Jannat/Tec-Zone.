@@ -10,7 +10,7 @@ import { margin_top } from "./components/common/container/container";
 export default function Home() {
   return (
     <main>
-      <div className={`${margin_top} overflow-x-hidden `}>
+      <div className={`${margin_top} overflow-x-hidden`}>
         <Banner />
         <BestDeal />
         <FeaturesProducts />

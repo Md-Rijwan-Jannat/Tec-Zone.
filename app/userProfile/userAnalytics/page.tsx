@@ -26,10 +26,10 @@ const chartOptions: ApexOptions = {
   dataLabels: {
     enabled: false,
   },
-  colors: ["#FF69B4"], // Pink color code
+  colors: ["#FF69B4"],
   stroke: {
     lineCap: "round",
-    curve: "smooth", // Adjusted to a valid value
+    curve: "smooth",
   },
   markers: {
     size: 0,
@@ -91,14 +91,15 @@ const UserAnalytics: React.FC<UserAnalyticsProps> = () => {
 
   useEffect(() => {
     setIsClient(true);
-    // Dynamically import Chart component when running in the client-side context
+
     import("react-apexcharts").then((module) => {
-      setChartSeries([
+      const seriesData = [
         {
           name: "Sales",
           data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
         },
-      ]);
+      ];
+      setChartSeries(seriesData);
     });
   }, []);
 
